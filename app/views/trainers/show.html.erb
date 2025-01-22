@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Информация о тренере</h1>
+
+  <div class="details">
+    <p><strong>ФИО:</strong> <%= @trainer.name %></p>
+    <p><strong>Специализация:</strong> <%= @trainer.specialty %></p>
+    <p><strong>Опыт:</strong> <%= @trainer.experience %> лет</p>
+    <p><strong>Телефон:</strong> <%= @trainer.phone %></p>
+    <p><strong>Email:</strong> <%= @trainer.email %></p>
+  </div>
+
+  <div class="actions">
+    <%= link_to "Показать тренировки", workouts_trainer_path(@trainer), class: "button" %>
+    <%= link_to "Редактировать", edit_trainer_path(@trainer), class: "button" %>
+    <%= link_to "Назад", trainers_path, class: "button secondary" %>
+    <%= link_to "На главную", root_path, class: "button secondary" %>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Тренировки тренера: <%= @trainer.name %></h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Дата</th>
+        <th>Продолжительность (минуты)</th>
+        <th>ФИО тренируемого</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @workouts.each do |workout| %>
+        <tr>
+          <td><%= workout.date %></td>
+          <td><%= workout.duration %></td>
+          <td><%= workout.membership.name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <div class="actions">
+    <%= link_to "Назад", trainer_path(@trainer), class: "button" %>
+    <%= link_to "На главную", root_path, class: "button secondary" %>
+  </div>
+</div>

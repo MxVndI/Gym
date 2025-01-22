@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Подробности абонемента</h1>
+
+  <div class="details">
+    <p><strong>ФИО:</strong> <%= @membership.name %></p>
+    <p><strong>Телефон:</strong> <%= @membership.phone %></p>
+    <p><strong>Дата начала:</strong> <%= @membership.start_date %></p>
+    <p><strong>Дата окончания:</strong> <%= @membership.end_date %></p>
+    <p><strong>Статус:</strong> <%= @membership.status %></p>
+  </div>
+
+  <div class="actions">
+    <%= link_to "Редактировать", edit_membership_path(@membership), class: "button" %>
+    <%= link_to "Назад", memberships_path, class: "button secondary" %>
+    <%= link_to "На главную", root_path, class: "button secondary" %>
+  </div>
+</div>

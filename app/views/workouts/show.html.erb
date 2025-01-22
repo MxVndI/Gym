@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Детали тренировки</h1>
+
+  <div class="details">
+    <p><strong>Тренируемый:</strong> <%= @workout.membership.name %></p>
+    <p><strong>Тренер:</strong> <%= @workout.trainer.name %></p>
+    <p><strong>Дата тренировки:</strong> <%= @workout.date %></p>
+    <p><strong>Продолжительность:</strong> <%= @workout.duration %> минут</p>
+  </div>
+
+  <div class="actions">
+    <%= link_to "Редактировать", edit_workout_path(@workout), class: "button" %>
+    <%= link_to "Назад", workouts_path, class: "button secondary" %>
+    <%= link_to "На главную", root_path, class: "button secondary" %>
+  </div>
+</div>
