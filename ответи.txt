@@ -1,0 +1,11 @@
+C:\Ruby33-x64\lib\ruby\gems\3.3.0\gems\activerecord-8.0.1\lib\active_record.rb
+
+C:\Ruby33-x64\lib\ruby\gems\3.3.0\gems\activerecord-8.0.1\lib\active_record\suppressor.rb
+
+C:\Ruby33-x64\lib\ruby\gems\3.3.0\gems\activerecord-8.0.1\lib\active_record\persistence.rb
+
+C:\Ruby33-x64\lib\ruby\gems\3.3.0\gems\activerecord-8.0.1\lib\active_record\relation.rb
+
+C:\Ruby33-x64\lib\ruby\gems\3.3.0\gems\activerecord-8.0.1\lib\active_record\relation\query_methods.rb
+
+C:\Ruby33-x64\lib\ruby\gems\3.3.0\gems\activerecord-8.0.1\lib\active_record\connection_adapters\ Адаптеры

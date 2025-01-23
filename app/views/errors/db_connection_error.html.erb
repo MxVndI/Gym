@@ -1,0 +1,36 @@
+<!-- app/views/errors/db_connection_error.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ошибка подключения к базе данных</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    .button.disconnect {
+      background-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ошибка подключения к базе данных</h1>
+  <p>Приложение не может подключиться к базе данных. Пожалуйста, проверьте подключение и попробуйте снова.</p>
+
+  <!-- Кнопка для повторного подключения -->
+  <%= button_to "Повторно подключиться", reconnect_db_path, method: :post, class: "button", form: { data: { turbo: false } } %>
+  <!-- Кнопка для отключения базы данных (для тестирования) -->
+  <%= button_to "Отключить базу данных", disconnect_db_path, method: :post, class: "button disconnect" %>
+  
+</body>
+</html>
